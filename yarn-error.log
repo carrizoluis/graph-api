@@ -1,0 +1,102 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Luis Alberto Carrizo\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\Luis Alberto Carrizo\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Luis Alberto Carrizo\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\MySQL\MySQL Utilities 1.6;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk-11.0.8\bin;C:\eclipse\apache-maven-3.6.3\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\Program Files\nodejs;C:\Users\Luis Alberto Carrizo\.dotnet\tools;C:\Users\Luis Alberto Carrizo\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Luis Alberto Carrizo\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.17.5
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:26)
+
+npm manifest: 
+  {
+    "name": "graph-api",
+    "version": "0.0.1",
+    "description": "",
+    "author": "",
+    "private": true,
+    "license": "UNLICENSED",
+    "scripts": {
+      "prebuild": "rimraf dist",
+      "build": "nest build",
+      "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+      "start": "nest start",
+      "start:dev": "nest start --watch",
+      "start:debug": "nest start --debug --watch",
+      "start:prod": "node dist/main",
+      "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+      "test": "jest",
+      "test:watch": "jest --watch",
+      "test:cov": "jest --coverage",
+      "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+      "test:e2e": "jest --config ./test/jest-e2e.json"
+    },
+    "dependencies": {
+      "@nestjs/common": "^8.0.0",
+      "@nestjs/core": "^8.0.0",
+      "@nestjs/graphql": "^8.0.2",
+      "@nestjs/platform-express": "^8.0.0",
+      "@nestjs/typeorm": "^8.0.2",
+      "apollo-server-express": "^2.25.2",
+      "graphql": "^15.5.1",
+      "mysql2": "^2.3.0",
+      "reflect-metadata": "^0.1.13",
+      "rimraf": "^3.0.2",
+      "rxjs": "^7.2.0",
+      "typeorm": "^0.2.37"
+    },
+    "devDependencies": {
+      "@nestjs/cli": "^8.0.0",
+      "@nestjs/schematics": "^8.0.0",
+      "@nestjs/testing": "^8.0.0",
+      "@types/express": "^4.17.13",
+      "@types/jest": "^26.0.24",
+      "@types/node": "^16.0.0",
+      "@types/supertest": "^2.0.11",
+      "@typescript-eslint/eslint-plugin": "^4.28.2",
+      "@typescript-eslint/parser": "^4.28.2",
+      "eslint": "^7.30.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-prettier": "^3.4.0",
+      "jest": "27.0.6",
+      "prettier": "^2.3.2",
+      "supertest": "^6.1.3",
+      "ts-jest": "^27.0.3",
+      "ts-loader": "^9.2.3",
+      "ts-node": "^10.0.0",
+      "tsconfig-paths": "^3.10.1",
+      "typescript": "^4.3.5"
+    },
+    "jest": {
+      "moduleFileExtensions": [
+        "js",
+        "json",
+        "ts"
+      ],
+      "rootDir": "src",
+      "testRegex": ".*\\.spec\\.ts$",
+      "transform": {
+        "^.+\\.(t|j)s$": "ts-jest"
+      },
+      "collectCoverageFrom": [
+        "**/*.(t|j)s"
+      ],
+      "coverageDirectory": "../coverage",
+      "testEnvironment": "node"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
