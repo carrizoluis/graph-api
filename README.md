@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript project.
+[Nest](https://github.com/nestjs/nest) framework TypeScript project. It shows the using of graphql into a project.
 
 ## Installation
 
